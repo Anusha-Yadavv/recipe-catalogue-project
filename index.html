@@ -20,7 +20,7 @@
 
     <!-- Header section -->
     <header>
-        <nav class="navbar navbar-light bg-white container">
+        <nav class="navbar navbar-light bg-white container" id="desktop-nav">
             <div class="container-fluid">
                 <a class="navbar-brand"><img src="./assets/logo.svg" alt="logo"></a>
                 <div class="d-flex nav-links">
@@ -36,6 +36,26 @@
                 </div>
             </div>
         </nav>
+
+        <!-- mobile navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="mobile-nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="./assets/logo.svg"></a>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Explore</a>
+                        <a class="nav-link" href="#">Help</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main class="container">
@@ -43,7 +63,7 @@
         <section class="p-4">
 
             <div class="background-img-container">
-                <p><img src="./assets/background-content.svg"></p>
+                <p class="bg-description"><img src="./assets/background-content.svg"></p>
 
             </div>
             <!-- <img src="./assets/bg-img.svg" alt="background"> -->
@@ -65,7 +85,7 @@
         </section>
 
         <!-- Buttons container -->
-        <section>
+        <section class="filters-container">
 
             <div id="filters">
                 <button class="all-recipes-btn" onclick="filterRecipes('all')">All Recipes <img class="icon"
@@ -81,13 +101,18 @@
         <!-- Main section -->
         <section id="main-section">
             <div id="rating-filters">
-                <h1 class="">Filters</h1>
+                <h1 class="filter-heading">Filters</h1>
                 <h6 class="">Rating</h6>
-                <label><input type="radio" name="rating" onclick="filterByRating('above')"> 4 and Above </label>
-                <label><input type="radio" name="rating" onclick="filterByRating('below')"> Below 4</label>
+                <div class="rating-label">
+                    <label><input type="checkbox" name="rating" onclick="filterByRating('above')"> 4 and Above </label>
+                    <label><input type="checkbox" name="rating" onclick="filterByRating('below')"> Below 4</label>
+                </div>
             </div>
 
-            <div id="recipes-container"></div>
+            <div id="recipes-container">
+
+
+            </div>
 
         </section>
     </main>
@@ -108,7 +133,7 @@
 
             </div>
 
-            <div>
+            <div class="div-footer">
                 <h1>Company</h1>
                 <div class="">
                     <h1>Home</h1>
@@ -121,7 +146,7 @@
 
             </div>
 
-            <div>
+            <div class="div-footer">
                 <h1>Resources</h1>
                 <div>
                     <h1>Blog</h1>
@@ -134,7 +159,7 @@
 
             </div>
 
-            <div>
+            <div class="div-footer">
                 <img src="./assets/logo.svg" alt="logo">
                 <div class="">
                     <p class="">Ut risus mattis interdum faucibus facilisi. Facilisi purus accumsan aliquam.</p>

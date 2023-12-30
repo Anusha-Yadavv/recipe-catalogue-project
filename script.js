@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function displayRecipes(recipes) {
+  const responsiveContainer = document.getElementById("responsive-container");
   const recipesContainer = document.getElementById("recipes-container");
+  //   responsiveContainer.appendChild(recipesContainer);
   recipesContainer.innerHTML = "";
 
   recipes.forEach((recipe) => {
@@ -47,7 +49,8 @@ function createRecipeCard(recipe) {
 
   const rating = document.createElement("p");
   rating.innerHTML =
-    '<img src="./assets/rating-star.svg" alt="rating">' + `: ${recipe.rating}`;
+    '<img src="./assets/rating-star.svg" alt="rating class="star">' +
+    `: ${recipe.rating}`;
   detailsContainerTwo.appendChild(rating);
 
   //container for like and chat buttons

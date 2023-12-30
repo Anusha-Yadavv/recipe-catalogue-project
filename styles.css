@@ -78,18 +78,18 @@ body {
 
 .all-recipes-btn {
     background-color: #EAAA00;
-    width: 15%;
+    width: 200px;
 }
 
 .veg-recipes-btn {
     background-color: #C4D600;
-    width: 15%;
+    width: 200px;
 
 }
 
 .non-veg-btn {
     background-color: #DC582A;
-    width: 15%;
+    width: 200px;
 
 
 }
@@ -201,8 +201,8 @@ body {
 .container-one {
     display: flex;
     justify-content: space-between;
-    margin-top: 90px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .container-one h1 {
@@ -271,4 +271,227 @@ body {
     left: 20px;
     font-size: 20px;
     color: white;
+}
+
+@media screen and (max-width:786px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    .background-img-container {
+        background-image: url("./assets/mobile-img.svg");
+        height: 28vh;
+        width: 100%;
+        border-radius: 15px;
+        padding: 30px;
+        padding-top: 50px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bg-description img {
+        height: 80px;
+    }
+
+    #search-section h1 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    #search-container {
+        margin-top: 10px;
+        margin: 0%;
+
+    }
+
+    .search-button {
+        height: 38px;
+
+    }
+
+    #search {
+        padding: 7px;
+        width: 80%;
+        margin: 0;
+        border: 1px solid #F3F3F3;
+    }
+
+    .all-recipes-btn {
+        /* width: 100%; */
+        font-size: 12px;
+        height: 60px;
+    }
+
+    .veg-recipes-btn {
+        /* width: 100%; */
+        font-size: 12px;
+        height: 60px;
+
+
+
+    }
+
+    .non-veg-btn {
+        /* width: 100%; */
+        font-size: 12px;
+        height: 60px;
+
+
+
+
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #filters {
+        display: flex;
+        white-space: no-wrap;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    #filters button {
+        margin-right: 20px;
+        padding: 15px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+
+
+    }
+
+    #main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter-heading {
+        display: none;
+    }
+
+    .rating-label {
+        display: flex;
+    }
+
+    #rating-filters {
+        margin-top: 15px;
+    }
+
+    #rating-filters h1 {
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+
+    #rating-filters label {
+        margin-right: 10px;
+        width: 35%;
+    }
+
+    .recipe-card {
+        border-radius: 10px;
+        margin: 8px;
+        padding: 5px;
+        width: 100px;
+
+
+
+    }
+
+    .recipe-card-img {
+
+        width: 100%;
+        height: 90px;
+        border-radius: 8px;
+        margin-bottom: 3px;
+    }
+
+    #recipes-container {
+        display: flex;
+        /* flex-wrap: nowrap; */
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .recipe-card-chat-img {
+        display: none;
+
+    }
+
+
+
+    .details-container-one h3 {
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .time {
+        margin-top: 27px;
+        color: #DC582A;
+        font-weight: 600;
+        font-size: 10px;
+    }
+
+    .like-button {
+        display: none;
+
+    }
+
+    .like-and-chat {
+        display: none;
+
+
+
+    }
+
+    .chat {
+        height: 30px;
+    }
+
+    #social-links {
+        display: none;
+    }
+
+    #rating-filters {
+        margin-top: 20px;
+    }
+
+
+    #rating-filters h1 {
+        font-size: 5px;
+        font-weight: 700;
+
+    }
+
+    #rating-filters label {
+        margin-right: 100px;
+        width: 100%;
+    }
+
+    .div-footer {
+        display: none;
+    }
+
+    .content {
+        margin-bottom: 40px;
+    }
+
+    .content p {
+        font-size: 12px;
+        width: 100%;
+
+
+    }
+
+}
+
+@media screen and (min-width:786px) {
+    #mobile-nav {
+        display: none;
+    }
+
 }
